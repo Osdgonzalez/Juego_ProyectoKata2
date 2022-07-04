@@ -57,9 +57,40 @@ function seleccionar(valorP1){
    
    Esta funcion de manera general tiene que llevar la logica del juego.*/
 
+   function comparar(player1 , player2){
+    if(player1 === player2){
+        return 'Empate';
+    }
+    else{
 
-   function comparar(valorPlayer1 , valorPlayer2){
+        if(player1 === 'piedra'){
 
-    //..........
-    
-   }
+            if(player2 === 'tijera'){
+                return 'player1';
+            }
+            else{
+                return 'player2';
+            }
+        }
+        else if(player1 === 'papel'){
+
+            if(player2 === 'piedra'){
+                return 'player1';
+            }
+            else{
+                return 'player2';
+            }
+
+        }
+        else if(player1 === 'tijera'){
+
+            if(player2 === 'papel'){
+                return 'player1';
+            }
+            else{
+                return 'player2';
+            }
+        }
+    }
+
+}
